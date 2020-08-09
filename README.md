@@ -1,2 +1,2 @@
 # dht22
-dht22 golang docker
+use `make` for help message
