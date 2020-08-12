@@ -5,6 +5,7 @@ WORKDIR /app/
 RUN apk --no-cache add git
 RUN go get -d -v github.com/MichaelS11/go-dht
 COPY src/main.go .
+RUN go version
 RUN go build -o dht22 .
 
 ## RUNTIME IMAGE
