@@ -1,9 +1,0 @@
-version: '3.3'
-services:
-  dht22:
-    volumes:
-      - '/proc:/proc:ro'
-    container_name: dht22
-    image: dht22
-    privileged: true
-
