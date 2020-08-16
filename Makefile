@@ -3,6 +3,9 @@
 build: ## Force rebuild container
 	@docker build -t dht22 -f docker/Dockerfile .
 
+force-build: ## Rebuild container
+	@docker build -t dht22 --no-cache --pull -f docker/Dockerfile .
+
 run: ## Get values from dht22
 	@docker run --rm --privileged dht22 ./dht22
 
